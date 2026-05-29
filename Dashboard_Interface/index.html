@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliotech - Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo-text">BIBLIOTECH</div>
+        <div class="subtitle">Dashboard em Tempo Real</div>
+    </div>
+
+    <div class="dashboard-grid">
+        <div class="card">
+            <h3>Pessoas na Sala</h3>
+            <div class="big-number" id="pessoas-count">0</div>
+            <div class="status-badge" id="sala-status">SALA VAZIA</div>
+        </div>
+
+        <div class="card">
+            <h3>Último Registo RFID</h3>
+            <div class="rfid-info">
+                <p><span>Nome:</span> <strong id="rfid-nome">Aguardando...</strong></p>
+                <p><span>RA:</span> <strong id="rfid-ra">---</strong></p>
+                <p><span>Horário:</span> <strong id="rfid-horario">---</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="chart-container">
+        <canvas id="presencaChart"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+:root {
+    --bg-color: #0F0F0F;
+    --card-bg: #1A1A1A;
+    --text-main: #FFFFFF;
+    --text-muted: #A0A0A0;
+    --orange-grad: linear-gradient(90deg, #FF9B71, #FF7B47);
+    --blue-accent: #0028A8;
+    --danger: #FF3B30;
+    --success: #34C759;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo-text {
+    font-size: 28px;
+    font-weight: 700;
+    background: var(--orange-grad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    font-size: 12px;
+    color: var(--text-muted);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card h3 {
+    margin: 0 0 10px 0;
+    color: var(--text-muted);
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.big-number {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.status-badge {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: var(--success);
+    color: #000;
+    transition: background 0.3s ease;
+}
+
+.status-badge.lotada {
+    background: var(--danger);
+    color: #fff;
+}
+
+.chart-container {
+    width: 100%;
+    max-width: 1000px;
+    height: 400px;
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+}
+
+.rfid-info {
+    width: 100%;
+    text-align: left;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #333;
+}
+
+.rfid-info p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.rfid-info span {
+    color: var(--text-muted);
+}
