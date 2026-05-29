@@ -2,7 +2,7 @@
 
 Sistema IoT de controlo de acesso e lotação de sala com Dashboard Web em tempo real.
 
-## Equipa (Integrantes)
+## Equipe 2 (Integrantes)
 * Erick Araújo de Moraes - RA: 26000855
 * Gustavo Ferreira De Andrade - RA: 26000483
 * Murilo Henrique Mendes Minelli - RA: 26001081
